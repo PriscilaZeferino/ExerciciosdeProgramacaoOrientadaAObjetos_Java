@@ -4,9 +4,18 @@ import java.util.Scanner;
 
 class Exercicio2 
 {
+    static int mdc (int a, int b)
+    {
+        while(b != 0)
+        {
+            int r = a % b;
+            a = b;
+            b = r;
+        }
+        return a;
+    }
     static int mmc (int a, int b) {
-
-
+        return a * (b/mdc(a,b));
     }
 
     public static void main (String args []){
@@ -18,6 +27,7 @@ class Exercicio2
         // System.out.println("Digite outro número: ");
         // int b = entrada.nextInt();
 
-        mmc(28, 8);
+        int mmc = mmc(28, 8);
+        System.out.println(mmc);
     }
 }
