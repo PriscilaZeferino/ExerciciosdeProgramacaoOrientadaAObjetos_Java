@@ -1,21 +1,21 @@
-// Faça uma função printaVet que recebe um vetor de int como parâmetro e o imprime
-// em tela (função sem retorno). 
+package lista1;
 
-import java.util.Scanner;
 import java.util.Random;
 
-class Exercicio3
-{
+public class ex3 {
+	
+//	Faça uma função printaVet que recebe um vetor de int como parâmetro e o imprime
+//	em tela (função sem retorno). 
 
-    static void printVet (int vet[]){
+	public static void printaVet (int vet[]){
         for(int vetNumber: vet)
         {
             System.out.println(vetNumber);
         }
     }
-
-    public static void main (String [] args)
-    {
+	
+	public static void main(String[] args) {
+		
         Random number = new Random();
 
         int [] vet = new int[5];
@@ -23,7 +23,7 @@ class Exercicio3
             vet[i] = number.nextInt(10);
         }
 
-        printVet(vet);
+        printaVet(vet);
+	}
 
-    }
 }
